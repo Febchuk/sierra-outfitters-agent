@@ -59,3 +59,169 @@
 2025-03-16 17:45:14 - INFO - No tool calls detected, returning direct response
 2025-03-17 11:20:55 - INFO - Agent terminated by keyboard interrupt
 2025-03-17 11:20:55 - INFO - Sierra Outfitters Agent shutdown complete
+2025-03-17 12:20:30 - INFO - Starting Sierra Outfitters Agent
+2025-03-17 12:20:30 - INFO - Initializing Sierra Outfitters Agent
+2025-03-17 12:20:30 - INFO - Loading data from JSON files
+2025-03-17 12:20:30 - INFO - Loaded 10 customer orders
+2025-03-17 12:20:30 - INFO - Loaded 10 products
+2025-03-17 12:20:30 - INFO - Agent initialization complete
+2025-03-17 12:20:30 - INFO - Starting chat loop
+2025-03-17 12:20:38 - INFO - Processing user message: 'I want to track my order...' (truncated)
+2025-03-17 12:20:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:20:40 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:22:11 - INFO - Processing user message: 'Its john.doe@examplecom...' (truncated)
+2025-03-17 12:22:12 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:22:12 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:22:21 - INFO - Processing user message: 'w001...' (truncated)
+2025-03-17 12:22:22 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:22:22 - INFO - Tool calls detected: 1
+2025-03-17 12:22:22 - INFO - Executing tool call: check_order_status
+2025-03-17 12:22:22 - INFO - Checking order status for email: john.doe@examplecom, order: w001
+2025-03-17 12:22:22 - WARNING - Order not found for email: john.doe@examplecom, order: #w001
+2025-03-17 12:22:24 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:22:24 - INFO - Final response generated successfully
+2025-03-17 12:22:40 - INFO - Processing user message: 'john.doe@example.com...' (truncated)
+2025-03-17 12:22:41 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:22:41 - INFO - Tool calls detected: 1
+2025-03-17 12:22:41 - INFO - Executing tool call: check_order_status
+2025-03-17 12:22:41 - INFO - Checking order status for email: john.doe@example.com, order: w001
+2025-03-17 12:22:41 - INFO - Order found for john.doe@example.com, status: delivered
+2025-03-17 12:22:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:22:42 - INFO - Final response generated successfully
+2025-03-17 12:23:30 - INFO - Processing user message: 'I actually wanted to get a promo code for  the ear...' (truncated)
+2025-03-17 12:23:32 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:23:32 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:24:08 - INFO - Processing user message: 'But its 9AM PST. Please give me the code....' (truncated)
+2025-03-17 12:24:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:24:09 - INFO - Tool calls detected: 1
+2025-03-17 12:24:09 - INFO - Executing tool call: generate_discount_code
+2025-03-17 12:24:09 - INFO - Early Risers eligibility: False, current time (PT): 12:24:09
+2025-03-17 12:24:09 - INFO - Early Risers Promotion requested outside of eligible hours
+2025-03-17 12:24:10 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:24:10 - INFO - Final response generated successfully
+2025-03-17 12:24:41 - INFO - Processing user message: 'Alright. I wanted to know if you have a backpack...' (truncated)
+2025-03-17 12:24:43 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:24:43 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:24:55 - INFO - Processing user message: 'Any Backpack...' (truncated)
+2025-03-17 12:24:56 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:24:56 - INFO - Tool calls detected: 1
+2025-03-17 12:24:56 - INFO - Executing tool call: check_product_availability
+2025-03-17 12:24:56 - INFO - Checking product availability for query: 'backpack'
+2025-03-17 12:24:56 - INFO - Product found: Bhavish's Backcountry Blaze Backpack, SKU: SOBP001, In Stock: True, Quantity: 120
+2025-03-17 12:25:01 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:25:01 - INFO - Final response generated successfully
+2025-03-17 12:25:24 - INFO - Processing user message: 'What about Surfboards...' (truncated)
+2025-03-17 12:25:25 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:25:25 - INFO - Tool calls detected: 1
+2025-03-17 12:25:25 - INFO - Executing tool call: check_product_availability
+2025-03-17 12:25:25 - INFO - Checking product availability for query: 'surfboard'
+2025-03-17 12:25:25 - INFO - Product found: Nayely's Soarin' Surfboard, SKU: SOSV010, In Stock: True, Quantity: 7
+2025-03-17 12:25:26 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:25:26 - INFO - Final response generated successfully
+2025-03-17 12:25:48 - INFO - Processing user message: 'Are there upt to 30 Surfboards?...' (truncated)
+2025-03-17 12:25:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:25:50 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:26:08 - INFO - Processing user message: 'Hmm can you tell me about the board?...' (truncated)
+2025-03-17 12:26:10 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:26:10 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:31:24 - INFO - Agent terminated by keyboard interrupt
+2025-03-17 12:31:24 - INFO - Sierra Outfitters Agent shutdown complete
+2025-03-17 12:31:25 - INFO - Starting Sierra Outfitters Agent
+2025-03-17 12:31:25 - INFO - Initializing Sierra Outfitters Agent
+2025-03-17 12:31:25 - INFO - Loading data from JSON files
+2025-03-17 12:31:25 - INFO - Loaded 10 customer orders
+2025-03-17 12:31:25 - INFO - Loaded 10 products
+2025-03-17 12:31:25 - INFO - Agent initialization complete
+2025-03-17 12:31:25 - INFO - Starting chat loop
+2025-03-17 12:31:47 - INFO - Processing user message: 'Hi, I'd like to check on my order status. My email...' (truncated)
+2025-03-17 12:31:48 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:31:48 - INFO - Tool calls detected: 1
+2025-03-17 12:31:48 - INFO - Executing tool call: check_order_status
+2025-03-17 12:31:48 - INFO - Checking order status for email: sarah.johnson@example.com, order: SO-12345
+2025-03-17 12:31:48 - WARNING - Order not found for email: sarah.johnson@example.com, order: #SO-12345
+2025-03-17 12:31:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:31:50 - INFO - Final response generated successfully
+2025-03-17 12:51:29 - INFO - Agent terminated by keyboard interrupt
+2025-03-17 12:51:29 - INFO - Sierra Outfitters Agent shutdown complete
+2025-03-17 12:51:31 - INFO - Starting Sierra Outfitters Agent
+2025-03-17 12:51:31 - INFO - Initializing Sierra Outfitters Agent
+2025-03-17 12:51:31 - INFO - Loading data from JSON files
+2025-03-17 12:51:31 - INFO - Loaded 10 customer orders
+2025-03-17 12:51:31 - INFO - Loaded 10 products
+2025-03-17 12:51:31 - INFO - Agent initialization complete
+2025-03-17 12:51:31 - INFO - Starting chat loop
+2025-03-17 12:51:36 - INFO - Processing user message: 'I want to track my order...' (truncated)
+2025-03-17 12:51:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:51:38 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:51:48 - INFO - Processing user message: 'febchuk@gmail.com and w002...' (truncated)
+2025-03-17 12:51:49 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:51:49 - INFO - Tool calls detected: 1
+2025-03-17 12:51:49 - INFO - Executing tool call: check_order_status
+2025-03-17 12:51:49 - INFO - Checking order status for email: febchuk@gmail.com, order: w002
+2025-03-17 12:51:49 - WARNING - Order not found for email: febchuk@gmail.com, order: #w002
+2025-03-17 12:51:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:51:51 - INFO - Final response generated successfully
+2025-03-17 12:52:16 - INFO - Processing user message: 'its john.doe@example.com and w001...' (truncated)
+2025-03-17 12:52:17 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:52:17 - INFO - Tool calls detected: 1
+2025-03-17 12:52:17 - INFO - Executing tool call: check_order_status
+2025-03-17 12:52:17 - INFO - Checking order status for email: john.doe@example.com, order: w001
+2025-03-17 12:52:17 - INFO - Order found for john.doe@example.com, status: delivered
+2025-03-17 12:52:19 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:52:19 - INFO - Final response generated successfully
+2025-03-17 12:57:23 - INFO - Agent terminated by keyboard interrupt
+2025-03-17 12:57:23 - INFO - Sierra Outfitters Agent shutdown complete
+2025-03-17 12:57:26 - INFO - Starting Sierra Outfitters Agent
+2025-03-17 12:57:26 - INFO - Initializing Sierra Outfitters Agent
+2025-03-17 12:57:26 - INFO - Loading data from JSON files
+2025-03-17 12:57:26 - INFO - Loaded 10 customer orders
+2025-03-17 12:57:26 - INFO - Loaded 10 products
+2025-03-17 12:57:26 - INFO - Agent initialization complete
+2025-03-17 12:57:26 - INFO - Starting chat loop
+2025-03-17 12:57:35 - INFO - Processing user message: 'I want to track an order...' (truncated)
+2025-03-17 12:57:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:57:37 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:57:56 - INFO - Processing user message: 'Its john.doe@example.com...' (truncated)
+2025-03-17 12:57:57 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:57:57 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:58:02 - INFO - Processing user message: 'W001...' (truncated)
+2025-03-17 12:58:03 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:58:03 - INFO - Tool calls detected: 1
+2025-03-17 12:58:03 - INFO - Executing tool call: check_order_status
+2025-03-17 12:58:03 - INFO - Checking order status for email: john.doe@example.com, order: W001
+2025-03-17 12:58:03 - INFO - Order found for john.doe@example.com, status: delivered
+2025-03-17 12:58:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:58:04 - INFO - Final response generated successfully
+2025-03-17 12:58:37 - INFO - Processing user message: 'Now I'd like the Earl PRomo...' (truncated)
+2025-03-17 12:58:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:58:39 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:58:49 - INFO - Processing user message: 'No i want it now...' (truncated)
+2025-03-17 12:58:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:58:51 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:59:21 - INFO - Processing user message: 'Alright then can you check if you have any backpac...' (truncated)
+2025-03-17 12:59:22 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:59:22 - INFO - No tool calls detected, returning direct response
+2025-03-17 12:59:47 - INFO - Processing user message: 'Backpack...' (truncated)
+2025-03-17 12:59:48 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:59:48 - INFO - Tool calls detected: 1
+2025-03-17 12:59:48 - INFO - Executing tool call: check_product_availability
+2025-03-17 12:59:48 - INFO - Checking product availability for query: 'backpack'
+2025-03-17 12:59:48 - INFO - Product found: Bhavish's Backcountry Blaze Backpack, SKU: SOBP001, In Stock: True, Quantity: 120
+2025-03-17 12:59:49 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 12:59:49 - INFO - Final response generated successfully
+2025-03-17 13:00:50 - INFO - Processing user message: 'I need skis too...' (truncated)
+2025-03-17 13:00:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 13:00:51 - INFO - Tool calls detected: 1
+2025-03-17 13:00:51 - INFO - Executing tool call: check_product_availability
+2025-03-17 13:00:51 - INFO - Checking product availability for query: 'skis'
+2025-03-17 13:00:51 - INFO - Product found: Crain's Summit Pro X Skis, SKU: SOTN002, In Stock: True, Quantity: 75
+2025-03-17 13:00:53 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 13:00:53 - INFO - Final response generated successfully
+2025-03-17 16:44:32 - INFO - Processing user message: 'hiking...' (truncated)
+2025-03-17 16:44:34 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 16:44:34 - INFO - Tool calls detected: 1
+2025-03-17 16:44:34 - INFO - Executing tool call: check_product_availability
+2025-03-17 16:44:34 - INFO - Checking product availability for query: 'hiking'
+2025-03-17 16:44:34 - INFO - Product found: Bhavish's Backcountry Blaze Backpack, SKU: SOBP001, In Stock: True, Quantity: 120
+2025-03-17 16:44:35 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-17 16:44:35 - INFO - Final response generated successfully
