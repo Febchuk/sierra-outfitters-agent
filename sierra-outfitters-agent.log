@@ -225,3 +225,5 @@
 2025-03-17 16:44:34 - INFO - Product found: Bhavish's Backcountry Blaze Backpack, SKU: SOBP001, In Stock: True, Quantity: 120
 2025-03-17 16:44:35 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-03-17 16:44:35 - INFO - Final response generated successfully
+2025-03-17 16:47:31 - INFO - Agent terminated by keyboard interrupt
+2025-03-17 16:47:31 - INFO - Sierra Outfitters Agent shutdown complete
