@@ -57,3 +57,5 @@
 2025-03-16 17:45:12 - INFO - Processing user message: 'do you have discount codes...' (truncated)
 2025-03-16 17:45:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-03-16 17:45:14 - INFO - No tool calls detected, returning direct response
+2025-03-17 11:20:55 - INFO - Agent terminated by keyboard interrupt
+2025-03-17 11:20:55 - INFO - Sierra Outfitters Agent shutdown complete
