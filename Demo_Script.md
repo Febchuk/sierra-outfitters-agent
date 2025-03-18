@@ -16,6 +16,10 @@ Back in the day I'd have to sit on the phone, but apparently Sierra Outfitters h
 
 *[Observation: I like the fact that the agent refers to me by my first name.]*
 
+**Prompt:** W004
+
+*[Reaction: Oops looks like I got the order number wrong But its cool I don't need to add the # sign.]*
+
 **Prompt:** #W003
 
 *[Reaction: Damn looks like I might have to rent skis since my order still hasn't shipped.]*
@@ -35,9 +39,13 @@ Back in the day I'd have to sit on the phone, but apparently Sierra Outfitters h
 **Prompt:** The Blaze backpack?
 
 ### Additional Product Inquiry
-*[Context: Oh, I just remembered I'm going to SoCal in the summer. Let's see if I can get a surfing board in stock.]*
+*[Context: Oh, I just remembered I'm going to SoCal in the summer. Let's see if I can get a surfing board in wetsuit.]*
 
-**Prompt:** What about a surfboard
+**Prompt:** What about a wetsuit?
+
+*[Context: Damn I guess not. Let's see if I can get a surfboard]*
+
+**Prompt:** What about a surfboard?
 
 *[Reaction: Oh Damn, looks like there aren't too many in stock. If I'm getting both I don't want to spend too much money. Let me ask if there are any promotions going on.]*
 

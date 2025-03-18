@@ -163,3 +163,18 @@
 2025-03-17 23:19:51 - INFO - No tool calls detected, returning direct response
 2025-03-17 23:19:55 - INFO - User requested exit, ending chat loop
 2025-03-17 23:19:55 - INFO - Sierra Outfitters Agent shutdown complete
+2025-03-18 00:37:54 - INFO - Starting Sierra Outfitters Agent
+2025-03-18 00:37:54 - INFO - Initializing Sierra Outfitters Agent
+2025-03-18 00:37:55 - INFO - Loading data from JSON files
+2025-03-18 00:37:55 - INFO - Loaded 10 customer orders
+2025-03-18 00:37:55 - INFO - Loaded 10 products
+2025-03-18 00:37:55 - INFO - Agent initialization complete
+2025-03-18 00:37:55 - INFO - Starting chat loop
+2025-03-18 00:38:11 - INFO - Processing user message: 'Do you have a wet suit...' (truncated)
+2025-03-18 00:38:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-18 00:38:13 - INFO - Tool calls detected: 1
+2025-03-18 00:38:13 - INFO - Executing tool call: check_product_availability
+2025-03-18 00:38:13 - INFO - Checking product availability for query: 'wet suit'
+2025-03-18 00:38:13 - WARNING - No product found matching query: 'wet suit'
+2025-03-18 00:38:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-18 00:38:14 - INFO - Final response generated successfully
